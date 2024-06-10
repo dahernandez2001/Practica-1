@@ -1,0 +1,172 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/Style.CSS">
+    <title class="tipografia">Cafeteria de Nuestro Sol</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+    <div class="Cafe">
+    <h1 class="T-1"> Cafe Del Sol</h1>
+    </div>
+
+
+    <section class="intro">
+        <p class="cero">Café del Sol es una cafetería acogedora situada en el centro de la ciudad. Ofrecemos una variedad de cafés especiales, tés,
+            repostería casera y opciones saludables para el desayuno y almuerzo. Nuestro objetivo es proporcionar un ambiente relajado y
+            cómodo donde los clientes puedan disfrutar de buena comida y bebida.</p>
+     
+    </section>
+
+    <section class="Bienvenido">
+        <div class="contenedor-1">
+            <h1 class="Texto">Bienvenidos a Nuestra Cafetería</h1>
+        </div>
+      <div class="contenedor-Bienvenidos"> 
+         <img src="img/Bienvenido.jpeg">
+       </div>
+       <div class="Bienvenido">
+        <h3>Filosofia</h3>
+        <p class="Primer-parrafo">Nuestra filosofía se basa en crear un espacio acogedor y relajante donde cada visitante pueda disfrutar de un momento de tranquilidad,
+        acompañado por una bebida de calidad y comida deliciosa. Creemos en la importancia de los pequeños detalles y en la conexión con nuestra
+        comunidad, por lo que nos esforzamos en ofrecer un servicio amable y personalizado. Valoramos la sostenibilidad y nos comprometemos a
+        utilizar ingredientes frescos, locales y orgánicos siempre que sea posible, contribuyendo así al bienestar de nuestros clientes y al 
+        cuidado del medio ambiente.</p>
+
+        <h3>Oferta:</h3>
+
+        <p class="Segundo-parrafo">En nuestra cafetería, ofrecemos una amplia variedad de cafés especiales elaborados con granos de origen sostenible, tés seleccionados
+        y una gama de bebidas artesanales. Nuestro menú incluye opciones para el desayuno y el almuerzo, desde repostería casera y panes 
+        frescos, hasta ensaladas y sándwiches saludables. Además, contamos con alternativas veganas y sin gluten para satisfacer todas las
+        preferencias dietéticas. Queremos que cada visita a nuestra cafetería sea una experiencia única y placentera, donde el sabor y la 
+        calidad se encuentren en cada detalle.</p>
+       </div>
+    </section>
+    
+    
+    <section class="contenido">
+        <div class="mostrador " id="mostrador">
+          <div class="Titulo-2">
+            <h2>Menu</h2>
+          </div> 
+            <div class="fila">
+                <div class="item" onclick="cargar(this)"> 
+                    <div class="comtenedor-foto">
+                        <img src="img/1.png">
+                    </div>
+                    <p class="descripcion">Taza De cafe</p>
+                    <span class="precio">$ 3.000</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="comtenedor-foto">
+                        <img src="img/2.jpeg">
+                    </div>
+                    <p class="descripcion">Malteada</p>
+                    <span class="precio">$ 6.000</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="comtenedor-foto">
+                        <img src="img/3.jpeg">
+                    </div>
+                    <p class="descripcion">Sandwitch</p>
+                    <span class="precio">$ 4.500</span>
+                </div>
+                <div class="item" onclick="cargar(this)"> 
+                    <div class="comtenedor-foto">
+                        <img src="img/4.jpeg">
+                    </div>
+                    <p class="descripcion">Panqueques con miel</p>
+                    <span class="precio">$ 7.000</span>
+
+                </div>
+            </div>
+            <div class="fila">
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/5.jpeg" alt="">
+                    </div>
+                    <p class="descripcion">Cafe de starbucks</p>
+                    <span class="precio">$ 8.000</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/6.jpeg" alt="">
+                    </div>
+                    <p class="descripcion">Porcion de torta</p>
+                    <span class="precio">$ 3.000</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/7.jpeg" alt="">
+                    </div>
+                    <p class="descripcion">Huevos revueltos</p>
+                    <span class="precio">$ 5.500</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/8.jpeg" alt="Cafe">
+                    </div>
+                    <p class="descripcion">Cafe con crema</p>
+                    <span class="precio">$ 3.500</span>
+                </div>
+            </div> 
+        </div>
+
+         <!-- CONTENEDOR DEL ITEM SELECCIONADO -->
+        <div class="seleccion" id="seleccion">
+            <div class="cerrar" onclick="cerrar()">
+                &#x2715
+            </div>
+            <div class="info">
+                <img src="img/1.png" alt="" id="img">
+                <h2 id="modelo">ola</h2>
+                <p id="descripcion">Descripción Modelo 1</p>
+
+                <span class="precio" id="precio">$ 3.000</span>
+
+                <div class="fila">
+                    <div class="size">
+                        <label for="">SIZE</label>
+                        <select name="" id="">
+                            <option value="">40</option>
+                            <option value="">42</option>
+                            <option value="">44</option>
+                            <option value="">46</option>
+                        </select>
+                    </div>
+                    <button>AGREGAR AL CARRITO</button>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <script 
+    src="script.js"></script>
+
+    </script>
+
+    <section class="ola">
+      
+        <img src="img/anime 5.jfif">
+        <img src="img/anime 4.jfif">
+        <img src="img/anime 3.jfif">
+        <img src="img/anime 2.jfif">
+    </section>
+
+</body>
+
+
+</html>
+
+
+
+
+
+
+
