@@ -21,7 +21,7 @@
 }
 
 body {
-    background-color: #e3e3e5;
+    background-color:  #cfcff3
 }
 
 .Texto {
@@ -139,7 +139,7 @@ body {
     margin: 30px 0;
 }   
 .mostrador .fila .item .descripcion{
-    color: #33a4a4;
+    color: #425757;
     font-weight: bold;
 }
 .mostrador .fila .item .precio{
